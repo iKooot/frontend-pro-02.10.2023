@@ -4,9 +4,7 @@
 
 Використовуючи alert та prompt створити пешу програму за таким функціоналом:
 
-Привітатись з юзером  - "Hello!";
-Спитати імя - "What is your name?";
-Спитати з якої він країни - "Where are you from?";
-Спитати рік нродження - "What year were you born"?;
-Порахувати скільки років юзеру;
-Вивести на екран -  "Nice to meet you, {name}! You are {age}! You are from {country}!"
+1. Привітатись з юзером  - "Hello!";
+2. Спитати імя - "What is your name?";
+3. Спитати з якої він країни - "Where are you from?";
+4. Вивести на екран -  "Nice to meet you, {name}! You are from {country}!"
