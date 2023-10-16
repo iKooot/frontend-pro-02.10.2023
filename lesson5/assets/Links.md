@@ -12,7 +12,7 @@
 
 [Специфікація](https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects)
 
-## Nimber
+## Number
 
 [Number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number)
 
