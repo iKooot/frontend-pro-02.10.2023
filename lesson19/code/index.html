@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lesson 19</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 onclick="this.style.fontWeight = 300">Events</h1>
+      <a href="http://google.com"><p>Go to google</p></a>
+      <form>
+        <label for="inputName" class="form-label">Name</label>
+        <input type="text" id="inputName" class="form-control" />
+        <div id="passwordHelpBlock" class="form-text">
+          Your name must be 2-20 characters long.
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </div>
+    <div class="container mt-3" id="buttons-container">
+      <button class="btn btn-primary" data-action="submit">Submit</button>
+      <button class="btn btn-secondary" data-action="reload">Reload</button>
+      <button class="btn btn-warning" data-action="save">Save</button>
+    </div>
+    <div class="container mt-3">
+      <button class="btn btn-primary" data-toggle-id="show-counters">Show counters</button>
+      <div class="container mt-3" id="show-counters" hidden>
+        <label>
+          counter 1
+          <input type="button" value="1" data-counter>
+        </label>
+        <label>
+          counter 2
+          <input type="button" value="2" data-counter>
+        </label>
+      </div>
+    </div>
+  </body>
+</html>
