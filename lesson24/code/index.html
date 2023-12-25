@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lesson24</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/idb@8/build/umd.js" defer></script>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-primary" data-fetch>Fetch films</button>
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <div class="spinner-grow d-none" role="status" data-loader data-abort>
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <ul class="list-group mt-3 d-none" data-list>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
