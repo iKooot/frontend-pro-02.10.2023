@@ -1,0 +1,12 @@
+.task-list-title {
+    text-align: center;
+}
+
+.task-list-container  {
+    list-style: none;
+    padding: 12px;
+}
+
+.task-list-container  li {
+    margin-bottom: 12px;
+}
