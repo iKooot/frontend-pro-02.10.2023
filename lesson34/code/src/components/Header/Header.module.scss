@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  img {
+    width: 70px;
+    height: 60px;
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: inherit;
+  }
+}
