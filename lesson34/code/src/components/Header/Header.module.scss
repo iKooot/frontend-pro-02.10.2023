@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
 }
 
 .logo {
@@ -12,7 +13,10 @@
   a {
     text-decoration: none;
     display: flex;
-    align-items: center;
     color: inherit;
   }
+}
+
+.navigation {
+  flex: 1;
 }

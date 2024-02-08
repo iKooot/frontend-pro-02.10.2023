@@ -1,6 +1,6 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
+import { themeContext } from "../../../Context";
 import style from "./PageLayout.module.scss";
-import {themeContext} from "../../../context";
 
 export function PageLayout({
   renderHeader = () => null,
