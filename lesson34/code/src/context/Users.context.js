@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { initialUsersState } from "../services";
+import { initialUsersState } from "../services/state/users";
 
 export const UsersContext = createContext(initialUsersState);
 export const UsersDispatchContext = createContext(null);

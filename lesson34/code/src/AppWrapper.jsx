@@ -1,21 +1,39 @@
 import React, { useReducer, useState } from "react";
-import { App } from "./App";
 import {
-  THEME_DARK,
   ThemeContextProvider,
-  UsersContextProvider,
+  THEME_DARK,
   UsersDispatchProvider,
-} from "./context";
-import { initialUsersState, usersReducer } from "./services";
+  UsersContextProvider,
+  UserInfoContextProvider,
+  UserInfoDispatchProvider,
+} from "./Context";
+import { initialUsersState, usersReducer } from "./services/state/users";
+import {
+  initialUserInfoState,
+  userInfoReducer,
+} from "./services/state/userInfo";
+import { App } from "./App";
 
 export function AppWrapper() {
   const [theme, setTheme] = useState(THEME_DARK);
-  const [usersState, dispatch] = useReducer(usersReducer, initialUsersState);
+  const [usersState, dispatchUsers] = useReducer(
+    usersReducer,
+    initialUsersState,
+  );
+  const [userInfoState, dispatchUserInfo] = useReducer(
+    userInfoReducer,
+    initialUserInfoState,
+  );
+
   return (
     <ThemeContextProvider value={{ theme, setTheme }}>
       <UsersContextProvider value={usersState}>
-        <UsersDispatchProvider value={dispatch}>
-          <App />
+        <UsersDispatchProvider value={dispatchUsers}>
+          <UserInfoContextProvider value={userInfoState}>
+            <UserInfoDispatchProvider value={dispatchUserInfo}>
+              <App />
+            </UserInfoDispatchProvider>
+          </UserInfoContextProvider>
         </UsersDispatchProvider>
       </UsersContextProvider>
     </ThemeContextProvider>

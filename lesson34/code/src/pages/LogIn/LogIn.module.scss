@@ -1,0 +1,32 @@
+@import "../../services/style/_config.scss";
+
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: $m;
+}
+
+.link {
+  color: $c-primary;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}

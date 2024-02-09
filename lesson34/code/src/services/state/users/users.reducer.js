@@ -1,4 +1,4 @@
-import { ERROR, SUCCESS, LOADING } from "./users.actions";
+import { SUCCESS, LOADING, ERROR } from "./users.actions";
 
 const initialState = {
   loading: false,
@@ -6,14 +6,14 @@ const initialState = {
   users: [],
 };
 
-export function usersReducer(state, action) {
-  switch (action.type) {
+export function usersReducer(state, { type, payload }) {
+  switch (type) {
     case SUCCESS: {
       return {
         ...state,
         loading: false,
         error: null,
-        users: action.payload,
+        users: payload,
       };
     }
     case LOADING: {
@@ -26,7 +26,7 @@ export function usersReducer(state, action) {
       return {
         ...state,
         loading: false,
-        error: action.payload,
+        error: payload,
       };
     }
     default: {

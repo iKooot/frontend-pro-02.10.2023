@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import style from "./Loader.module.scss";
-import { themeContext } from "../../../context";
+import { themeContext } from "../../../Context";
 
 export function Loader() {
   const { theme } = useContext(themeContext);

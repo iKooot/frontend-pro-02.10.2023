@@ -1,6 +1,8 @@
 export * from './Layouts';
 export * from './Header';
-export * from './UI';
-export * from './UsersList';
 export * from './Footer';
-// export * from './WindowSizeWatcher';
+export * from './UsersList';
+export * from './UI';
+export * from './Forms';
+export * from './UserCard';
+export * from './FetchHoc';

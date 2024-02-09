@@ -1,0 +1,37 @@
+@import "_config";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.dark {
+  background-color: $c-dark;
+  color: $c-light;
+}
+
+.dark button {
+  background-color: $c-light;
+  color: $c-dark;
+}
+
+.dark button:hover {
+  background-color: $c-primary;
+  color: $c-light;
+}
+
+.light {
+  background-color: $c-light;
+  color: $c-dark;
+}
+
+.light button {
+  background-color: $c-dark;
+  color: $c-light;
+}
+
+.light button:hover {
+  background-color: $c-primary;
+  color: $c-light;
+}
