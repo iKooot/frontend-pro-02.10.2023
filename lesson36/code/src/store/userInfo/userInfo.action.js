@@ -1,0 +1,2 @@
+export const ADD_USER_INFO = 'ADD_USER_INFO';
+export const CLEAR_USER_INFO = 'CLEAR_USER_INFO';
