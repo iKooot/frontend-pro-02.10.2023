@@ -1,0 +1,8 @@
+@import "../../../services/style/_config.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: $s;
+  margin-bottom: $lg;
+}
