@@ -1,0 +1,11 @@
+.link {
+  text-decoration: none;
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.image {
+  width: 70px;
+  height: 60px;
+}
