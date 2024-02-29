@@ -1,0 +1,19 @@
+{
+  "name": "node2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js --file=data.json",
+    "start:file": "nodemon app.js --file=data.json"
+  },
+  "keywords": [],
+  "author": "iKot",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
